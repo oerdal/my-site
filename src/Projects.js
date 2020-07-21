@@ -4,8 +4,8 @@ import Project from './Project';
 const Projects = () => {
   return (
     <div id='projects' className='d-flex flex-column align-items-center my-4'>
-      <h2>Projects</h2>
-      <div className='d-flex align-items-center flex-wrap'>
+      <h2 id='projects-tag'>Projects</h2>
+      <div className='d-flex align-items-center justify-content-center flex-wrap'>
         <Project
           name='NBA Fantasy Trade Tool'
           description=
@@ -23,6 +23,24 @@ const Projects = () => {
             Built using React.js, Bootstrap, and deployed to Heroku.'
           link1='http://uwpaphi.com/'
           link2='https://github.com/oerdal/paphi'
+        />
+        <Project
+          name='Music Genre Classifier'
+          description=
+            'Machine Learning model built for classifying music by genre.
+            Uses Linear Discriminant Analysis and time-frequency analysis.
+            Written in MATLAB.'
+          link1='/ldareport.pdf'
+          link2='https://github.com/oerdal/amath482/tree/master/lda'
+        />
+        <Project
+          name='MNIST Image Classifier'
+          description=
+            'Convolutional Neural Network built for classifying images.
+            Uses modified implementation of LeNet-5 and Fashion MNIST data set.
+            Written in python with tensorflow and Keras.'
+          link1='/nnreport.pdf'
+          link2='https://github.com/oerdal/amath482/tree/master/neuralnetwork'
         />
         <Project
           name='NBA Team Optimization'
