@@ -3,7 +3,7 @@ import Project from './Project';
 
 const Projects = () => {
   return (
-    <div id='projects' className='d-flex flex-column align-items-center my-4'>
+    <div id='projects' className='d-flex flex-column align-items-center justify-content-center' style={{height: window.innerHeight}}>
       <h2 id='projects-tag'>Projects</h2>
       <div className='d-flex align-items-center justify-content-center flex-wrap'>
         <Project

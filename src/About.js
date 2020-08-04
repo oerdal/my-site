@@ -2,7 +2,7 @@ import React from 'react';
 
 function renderText() {
   return(
-    <div id='about' className='d-flex flex-column align-items-center my-4'>
+    <div id='about' className='d-flex flex-column align-items-center justify-content-center' style={{height: window.innerHeight}}>
       <h2 id='about-tag'>About Me</h2>
       <p className='w-50 text-center'>I am a recent graduate from the University of Washington.
         I have a Bachelor of Science in Applied and Computational Math Sciences with a concentration in Scientific Computing and Numerical Algorithms.

@@ -1,7 +1,8 @@
 import React, { Component } from 'react';
 import About from './About';
 import Projects from './Projects';
-import NavBar from './NavBar'
+import NavBar from './NavBar';
+import Contact from './Contact';
 
 class App extends Component {
   constructor(props) {
@@ -30,6 +31,7 @@ class App extends Component {
         <div id='body' className='position-relative' >
           <About />
           <Projects />
+          <Contact />
         </div>
       </div>
     );

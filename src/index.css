@@ -48,3 +48,7 @@ h2 {
 #_navbar_small {
   font-size: 0.8rem;
 }
+
+a img {
+  height: 120px;
+}
