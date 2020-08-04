@@ -6,11 +6,11 @@ const Project = ({ name, description, link1, link2 }) => {
       <h3>{name}</h3>
       <p className='w-75'>{description}</p>
       <div className='_links d-flex justify-content-around w-50'>
-        <a href={link1} target='_blank' rel='noopener noreferrer'>Check it Out!</a>
+        {link1.length !== 0 && <a href={link1} target='_blank' rel='noopener noreferrer'>Check it Out!</a>}
         <a href={link2} target='_blank' rel='noopener noreferrer'>Github</a>
       </div>
     </div>
-  );
+  )
 }
 
 export default Project;
