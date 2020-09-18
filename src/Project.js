@@ -1,13 +1,17 @@
 import React from 'react';
+import LazyLoad from 'react-lazy-load';
 
-const Project = ({ name, description, link1, link2 }) => {
+const Project = ({ name, description, img, link1, link2 }) => {
   return (
-    <div id='project' className='d-flex flex-column align-items-center text-center w-50 py-3 my-3'>
-      <h3>{name}</h3>
-      <p className='w-75'>{description}</p>
-      <div className='_links d-flex justify-content-around w-50'>
-        {link1.length !== 0 && <a href={link1} target='_blank' rel='noopener noreferrer'>Check it Out!</a>}
-        <a href={link2} target='_blank' rel='noopener noreferrer'>Github</a>
+    <div className='container d-flex flex-column align-items-center text-center py-3 my-3 _proj_container'>
+      <div className='_img_container my-4'>
+        <img src={img} className='_proj_img'/>
+      </div>
+      <h3 className='lead'>{name}</h3>
+      <p className='text-center text-muted'>{description}</p>
+      <div className='container d-flex justify-content-around'>
+        {link1.length !== 0 && <a href={link1} target='_blank' rel='noopener noreferrer' className='btn btn-sm btn-outline-primary'>Check it Out!</a>}
+        <a href={link2} target='_blank' rel='noopener noreferrer' className='btn btn-sm btn-outline-primary'>Github</a>
       </div>
     </div>
   )

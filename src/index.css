@@ -41,6 +41,18 @@ h2 {
   text-decoration: none;
 }
 
+._img_container {
+  height: 200px;
+}
+
+._proj_container {
+  flex-basis: 300px;
+}
+
+._proj_img {
+  height: 100%;
+}
+
 #_navbar_large {
   font-size: 1rem;
 }
@@ -50,5 +62,5 @@ h2 {
 }
 
 a img {
-  height: 120px;
+  height: 80px;
 }
